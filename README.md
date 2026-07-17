@@ -1,19 +1,31 @@
-# CSCI 1300 Final Project
-
 ## Theme
-A dice betting game where the player starts with $100 and bets on dice rolls each turn and the player picks a safe bet (better odds, small reward) or a risky bet (worse odds, big reward). The goal is to reach $500 before running out of turns or going broke.
+A dice betting game set in a valley town. You are a gambler trying to 
+restore the Community Center by collecting and donating 3 bundle items 
+before 7 days run out. Bet at the Casino to earn money, help characters 
+at the Market to get items, and avoid relying too much on Souq shortcuts.
 
 ## Goal
-(TBA)
+Donate 3 bundle items to the Community Center before day 7 ends.
 
 ## How to compile and run
-(TBA)
+g++ main.cpp Player.cpp Item.cpp Character.cpp Dice.cpp Bet.cpp SafeBet.cpp RiskyBet.cpp -o game
+./game
 
 ## How to play
-(TBA)
+- Visit Casino to bet and earn money
+- Visit Market to help Yousef and Ahmed for bundle items
+- Visit Community Center to donate items
+- Visit Souq for shortcuts (raises Joja Influence)
+- End day to restore energy
 
 ## Classes
-(TBA — list each class and what it does)
+- Player: stores name, money, energy, inventory, bundle progress
+- Item: stores item name, type, value, whether it is a bundle item
+- Character: stores name, location, dialogue, quest status
+- Bet: base class for betting types
+- SafeBet: inherits from Bet, 60% win chance, small payout
+- RiskyBet: inherits from Bet, 30% win chance, big payout
+- Dice: handles dice rolling
 
 ## Extra credit
-(TBA — or write "None")
+None
